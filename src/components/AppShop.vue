@@ -5,40 +5,50 @@
     <div class="container">
       <ul class="shop_list">
         <li>
-          <img
-            src="../assets/img/buy-comics-digital-comics.png"
-            alt=""
-          />
-          <span class="buy_text">Digital Comics</span>
+          <a href="#">
+            <img
+              src="../assets/img/buy-comics-digital-comics.png"
+              alt=""
+            />
+            <span class="buy_text">Digital Comics</span>
+          </a>
         </li>
         <li>
-          <img
-            src="../assets/img/buy-comics-merchandise.png"
-            alt=""
-          />
-          <span class="buy_text">DC Merchandise</span>
+          <a href="#">
+            <img
+              src="../assets/img/buy-comics-merchandise.png"
+              alt=""
+            />
+            <span class="buy_text">DC Merchandise</span>
+          </a>
         </li>
         <li>
-          <img
-            src="../assets/img/buy-comics-subscriptions.png"
-            alt=""
-          />
-          <span class="buy_text">Subscription</span>
+          <a href="#">
+            <img
+              src="../assets/img/buy-comics-subscriptions.png"
+              alt=""
+            />
+            <span class="buy_text">Subscription</span>
+          </a>
         </li>
         <li>
-          <img
-            src="../assets/img/buy-comics-shop-locator.png"
-            alt=""
-          />
-          <span class="buy_text">Comic Shop Locator</span>
+          <a href="#">
+            <img
+              src="../assets/img/buy-comics-shop-locator.png"
+              alt=""
+            />
+            <span class="buy_text">Comic Shop Locator</span>
+          </a>
         </li>
         <li>
-          <img
-            src="../assets/img/buy-dc-power-visa.svg"
-            alt=""
-            id="dc_power_visa_icon"
-          />
-          <span class="buy_text">DC Power Visa</span>
+          <a href="#">
+            <img
+              src="../assets/img/buy-dc-power-visa.svg"
+              alt=""
+              id="dc_power_visa_icon"
+            />
+            <span class="buy_text">DC Power Visa</span>
+          </a>
         </li>
       </ul>
     </div>
@@ -56,11 +66,16 @@
     justify-content: space-around;
 
     li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
       text-transform: uppercase;
       font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
     }
 
     img {

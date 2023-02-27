@@ -51,6 +51,10 @@ button {
   border: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1200px;

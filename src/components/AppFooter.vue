@@ -205,10 +205,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-ul {
-  list-style-type: none;
-}
-
 .upper_footer {
   background-image: url("../assets/img/footer-bg.jpg");
   background-repeat: no-repeat;
