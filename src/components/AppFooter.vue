@@ -14,31 +14,32 @@
           </li>
           <li>
             <img
-              src="../assets/img/buy-comics-digital-comics.png"
+              src="../assets/img/buy-comics-merchandise.png"
               alt=""
             />
-            <span class="buy_text">Digital Comics</span>
+            <span class="buy_text">DC Merchandise</span>
           </li>
           <li>
             <img
-              src="../assets/img/buy-comics-digital-comics.png"
+              src="../assets/img/buy-comics-subscriptions.png"
               alt=""
             />
-            <span class="buy_text">Digital Comics</span>
+            <span class="buy_text">Subscription</span>
           </li>
           <li>
             <img
-              src="../assets/img/buy-comics-digital-comics.png"
+              src="../assets/img/buy-comics-shop-locator.png"
               alt=""
             />
-            <span class="buy_text">Digital Comics</span>
+            <span class="buy_text">Comic Shop Locator</span>
           </li>
           <li>
             <img
-              src="../assets/img/buy-comics-digital-comics.png"
+              src="../assets/img/buy-dc-power-visa.svg"
               alt=""
+              id="dc_power_visa_icon"
             />
-            <span class="buy_text">Digital Comics</span>
+            <span class="buy_text">DC Power Visa</span>
           </li>
         </ul>
       </div>
@@ -48,7 +49,7 @@
       <div class="container">
         <div class="links">
           <div class="link">
-            <h3>DC Comics</h3>
+            <h2>DC Comics</h2>
             <ul>
               <li>Characters</li>
               <li>Comics</li>
@@ -59,7 +60,7 @@
               <li>News</li>
             </ul>
             <div class="link">
-              <h3>Shop</h3>
+              <h2>Shop</h2>
               <ul>
                 <li>Shop DC</li>
                 <li>Shop DC Collectibles</li>
@@ -67,7 +68,7 @@
             </div>
           </div>
           <div class="link">
-            <h3>DC</h3>
+            <h2>DC</h2>
             <ul>
               <li>Terms Of Use</li>
               <li>Privacy policy (New)</li>
@@ -83,7 +84,7 @@
             </ul>
           </div>
           <div class="link">
-            <h3>SITES</h3>
+            <h2>SITES</h2>
             <ul>
               <li>DC</li>
               <li>MAD Magazine</li>
@@ -165,7 +166,11 @@ ul {
 }
 
 .shop_list img {
-  height: 60px;
+  height: 50px;
+}
+
+.shop_list #dc_power_visa_icon {
+  height: 35px;
 }
 
 .middle_footer {
@@ -181,10 +186,14 @@ ul {
   gap: 30px;
 }
 
-.middle_footer h3 {
+.middle_footer h2 {
+  font-family: "Oswald", sans-serif;
   color: white;
   text-transform: uppercase;
-  padding: 10px 0;
+}
+
+.middle_footer ul {
+  margin: 10px 0;
 }
 
 .middle_footer li {
@@ -209,6 +218,8 @@ ul {
 }
 
 .bottom_footer .social_follow_us {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
   color: #0082f9;
   font-weight: bold;
 }

@@ -14,7 +14,7 @@
       <nav>
         <ul>
           <li><a href="#">Characters</a></li>
-          <li><a href="#">Comics</a></li>
+          <li class="nav_active"><a href="#">Comics</a></li>
           <li><a href="#">Movies</a></li>
           <li><a href="#">TV</a></li>
           <li><a href="#">Games</a></li>
@@ -30,10 +30,6 @@
 </template>
 
 <style scoped>
-header {
-  padding: 15px 0;
-}
-
 #logo {
   width: 70px;
 }
@@ -45,10 +41,21 @@ header {
 }
 
 ul li {
+  font-family: "Oswald", sans-serif;
   display: inline-block;
   margin-left: 2rem;
   text-transform: uppercase;
   font-weight: 600;
-  height: 100%;
+}
+
+ul .nav_active {
+  color: #0082f9;
+  box-shadow: inset 0 -5px #0082f9;
+}
+
+ul a {
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
 }
 </style>
