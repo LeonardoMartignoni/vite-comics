@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-  <div class="upper_footer">
+  <div class="shop">
     <div class="container">
       <ul class="shop_list">
         <li>
@@ -46,7 +46,7 @@
 </template>
 
 <style lang="scss" scoped>
-.upper_footer {
+.shop {
   background-color: #0082f9;
 
   .shop_list {
