@@ -1,11 +1,13 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   components: {
     AppHeader,
     AppMain,
+    AppFooter,
   },
 };
 </script>
@@ -15,6 +17,7 @@ export default {
   <main>
     <AppMain />
   </main>
+  <AppFooter />
 </template>
 
 <style>
@@ -27,6 +30,12 @@ export default {
 body {
   font-family: "Open Sans", sans-serif;
   color: #606060;
+}
+
+img {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 a {
