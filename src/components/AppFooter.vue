@@ -120,7 +120,7 @@ export default {
 
 <template>
   <footer>
-    <div class="upper_footer">
+    <!-- <div class="upper_footer">
       <div class="container">
         <ul class="shop_list">
           <li>
@@ -161,7 +161,7 @@ export default {
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <div class="middle_footer">
       <div class="container">
@@ -251,32 +251,32 @@ export default {
 ul {
   list-style-type: none;
 }
-.upper_footer {
-  background-color: #0082f9;
+// .upper_footer {
+//   background-color: #0082f9;
 
-  .shop_list {
-    color: white;
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-around;
+//   .shop_list {
+//     color: white;
+//     padding: 2rem 0;
+//     display: flex;
+//     justify-content: space-around;
 
-    li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-    }
+//     li {
+//       display: flex;
+//       align-items: center;
+//       gap: 10px;
+//       text-transform: uppercase;
+//       font-size: 0.9rem;
+//     }
 
-    img {
-      height: 50px;
-    }
+//     img {
+//       height: 50px;
+//     }
 
-    #dc_power_visa_icon {
-      height: 35px;
-    }
-  }
-}
+//     #dc_power_visa_icon {
+//       height: 35px;
+//     }
+//   }
+// }
 
 .middle_footer {
   background-image: url("../assets/img/footer-bg.jpg");
