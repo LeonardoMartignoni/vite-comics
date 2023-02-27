@@ -95,32 +95,47 @@
         </div>
       </div>
     </div>
+
     <div class="bottom_footer">
-      <button>SIGN-UP NOW!</button>
-      <div class="socials">
-        <span>FOLLOW US</span>
-        <span class="social_link">
-          <img
-            src="../assets/img/footer-facebook.png"
-            alt=""
-          />
-          <img
-            src="../assets/img/footer-twitter.png"
-            alt=""
-          />
-          <img
-            src="../assets/img/footer-youtube.png"
-            alt=""
-          />
-          <img
-            src="../assets/img/footer-pinterest.png"
-            alt=""
-          />
-          <img
-            src="../assets/img/footer-periscope.png"
-            alt=""
-          />
-        </span>
+      <div class="container">
+        <div class="bottom_footer_content">
+          <button>SIGN-UP NOW!</button>
+          <div class="socials">
+            <span class="social_follow_us">FOLLOW US</span>
+            <span class="social_links">
+              <a href="#">
+                <img
+                  src="../assets/img/footer-facebook.png"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="../assets/img/footer-twitter.png"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="../assets/img/footer-youtube.png"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="../assets/img/footer-pinterest.png"
+                  alt=""
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="../assets/img/footer-periscope.png"
+                  alt=""
+                />
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -175,5 +190,36 @@ ul {
 .middle_footer li {
   font-size: 0.9rem;
   margin-bottom: 3px;
+}
+
+.bottom_footer {
+  padding: 1.8rem 0;
+  background-color: #303030;
+}
+
+.bottom_footer_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom_footer button {
+  padding: 0.7rem;
+  color: white;
+  border: 2px solid #0082f9;
+}
+
+.bottom_footer .social_follow_us {
+  color: #0082f9;
+  font-weight: bold;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social_links a {
+  margin-left: 1rem;
 }
 </style>

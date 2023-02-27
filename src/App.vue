@@ -43,6 +43,11 @@ a {
   color: inherit;
 }
 
+button {
+  background: none;
+  border: 0;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
