@@ -1,4 +1,122 @@
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      comicsLinks: [
+        {
+          linkName: "Characters",
+          linkHref: "#",
+        },
+        {
+          linkName: "Comics",
+          linkHref: "#",
+        },
+        {
+          linkName: "Movies",
+          linkHref: "#",
+        },
+        {
+          linkName: "TV",
+          linkHref: "#",
+        },
+        {
+          linkName: "Games",
+          linkHref: "#",
+        },
+        {
+          linkName: "Videos",
+          linkHref: "#",
+        },
+        {
+          linkName: "News",
+          linkHref: "#",
+        },
+      ],
+
+      shopLinks: [
+        {
+          linkName: "Shop DC",
+          linkHref: "#",
+        },
+        {
+          linkName: "Shop DC Collectibles",
+          linkHref: "#",
+        },
+      ],
+
+      dcLinks: [
+        {
+          linkName: "Terms Of Use",
+          linkHref: "#",
+        },
+        {
+          linkName: "Privacy policy (New)",
+          linkHref: "#",
+        },
+        {
+          linkName: "Ad Choices",
+          linkHref: "#",
+        },
+        {
+          linkName: "Advertising",
+          linkHref: "#",
+        },
+        {
+          linkName: "Jobs",
+          linkHref: "#",
+        },
+        {
+          linkName: "Subscriptions",
+          linkHref: "#",
+        },
+        {
+          linkName: "Talent Workshops",
+          linkHref: "#",
+        },
+        {
+          linkName: "CPSC Certificates",
+          linkHref: "#",
+        },
+        {
+          linkName: "Ratings",
+          linkHref: "#",
+        },
+        {
+          linkName: "Shop Help",
+          linkHref: "#",
+        },
+        {
+          linkName: "Contact Us",
+          linkHref: "#",
+        },
+      ],
+
+      sitesLinks: [
+        {
+          linkName: "DC",
+          linkHref: "#",
+        },
+        {
+          linkName: "MAD Magazine",
+          linkHref: "#",
+        },
+        {
+          linkName: "DC Kids",
+          linkHref: "#",
+        },
+        {
+          linkName: "DC Universe",
+          linkHref: "#",
+        },
+        {
+          linkName: "DC Power Visa",
+          linkHref: "#",
+        },
+      ],
+    };
+  },
+};
+</script>
 
 <template>
   <footer>
@@ -51,46 +169,33 @@
           <div class="link">
             <h2>DC Comics</h2>
             <ul>
-              <li>Characters</li>
-              <li>Comics</li>
-              <li>Movies</li>
-              <li>TV</li>
-              <li>Games</li>
-              <li>Videos</li>
-              <li>News</li>
+              <li v-for="link in comicsLinks">
+                <a :href="link.linkHref">{{ link.linkName }}</a>
+              </li>
             </ul>
             <div class="link">
               <h2>Shop</h2>
               <ul>
-                <li>Shop DC</li>
-                <li>Shop DC Collectibles</li>
+                <li v-for="link in shopLinks">
+                  <a :href="link.linkHref">{{ link.linkName }}</a>
+                </li>
               </ul>
             </div>
           </div>
           <div class="link">
             <h2>DC</h2>
             <ul>
-              <li>Terms Of Use</li>
-              <li>Privacy policy (New)</li>
-              <li>Ad Choices</li>
-              <li>Advertising</li>
-              <li>Jobs</li>
-              <li>Subscriptions</li>
-              <li>Talent Workshops</li>
-              <li>CPSC Certificates</li>
-              <li>Ratings</li>
-              <li>Shop Help</li>
-              <li>Contact Us</li>
+              <li v-for="link in dcLinks">
+                <a :href="link.linkHref">{{ link.linkName }}</a>
+              </li>
             </ul>
           </div>
           <div class="link">
             <h2>SITES</h2>
             <ul>
-              <li>DC</li>
-              <li>MAD Magazine</li>
-              <li>DC Kids</li>
-              <li>DC Universe</li>
-              <li>DC Power Visa</li>
+              <li v-for="link in sitesLinks">
+                <a :href="link.linkHref">{{ link.linkName }}</a>
+              </li>
             </ul>
           </div>
         </div>
