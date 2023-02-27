@@ -1,4 +1,55 @@
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      navLinks: [
+        {
+          linkName: "Characters",
+          linkHref: "#characters",
+        },
+        {
+          linkName: "Comics",
+          linkHref: "#comics",
+        },
+        {
+          linkName: "Movies",
+          linkHref: "#movies",
+        },
+        {
+          linkName: "TV",
+          linkHref: "#tv",
+        },
+        {
+          linkName: "Games",
+          linkHref: "#games",
+        },
+        {
+          linkName: "Collectibles",
+          linkHref: "#collectibles",
+        },
+        {
+          linkName: "Videos",
+          linkHref: "#videos",
+        },
+        {
+          linkName: "Fans",
+          linkHref: "#fans",
+        },
+        {
+          linkName: "News",
+          linkHref: "#news",
+        },
+        {
+          linkName: "Shop",
+          linkHref: "#shop",
+        },
+      ],
+
+      navActiveLink: 0,
+    };
+  },
+};
+</script>
 
 <template>
   <header>
@@ -13,16 +64,13 @@
 
       <nav>
         <ul>
-          <li><a href="#">Characters</a></li>
-          <li class="nav_active"><a href="#">Comics</a></li>
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">TV</a></li>
-          <li><a href="#">Games</a></li>
-          <li><a href="#">Collectibles</a></li>
-          <li><a href="#">Videos</a></li>
-          <li><a href="#">Fans</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Shop</a></li>
+          <li
+            v-for="(link, index) in navLinks"
+            :class="navActiveLink == index ? 'nav_active' : ''"
+            @click="navActiveLink = index"
+          >
+            <a :href="link.linkHref">{{ link.linkName }}</a>
+          </li>
         </ul>
       </nav>
     </div>
