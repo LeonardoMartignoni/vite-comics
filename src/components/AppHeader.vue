@@ -77,7 +77,7 @@ export default {
   </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 #logo {
   width: 70px;
 }
@@ -88,22 +88,24 @@ export default {
   justify-content: space-between;
 }
 
-ul li {
-  font-family: "Oswald", sans-serif;
-  display: inline-block;
-  margin-left: 2rem;
-  text-transform: uppercase;
-  font-weight: 600;
-}
+ul {
+  li {
+    font-family: "Oswald", sans-serif;
+    display: inline-block;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
 
-ul .nav_active {
-  color: #0082f9;
-  box-shadow: inset 0 -5px #0082f9;
-}
+  .nav_active {
+    color: #0082f9;
+    box-shadow: inset 0 -5px #0082f9;
+  }
 
-ul a {
-  display: inline-block;
-  height: 100px;
-  line-height: 100px;
+  a {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+  }
 }
 </style>

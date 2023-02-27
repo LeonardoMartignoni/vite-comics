@@ -247,35 +247,35 @@ export default {
   </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 ul {
   list-style-type: none;
 }
 .upper_footer {
   background-color: #0082f9;
-}
 
-.shop_list {
-  color: white;
-  padding: 2rem 0;
-  display: flex;
-  justify-content: space-around;
-}
+  .shop_list {
+    color: white;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
 
-.shop_list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-}
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
 
-.shop_list img {
-  height: 50px;
-}
+    img {
+      height: 50px;
+    }
 
-.shop_list #dc_power_visa_icon {
-  height: 35px;
+    #dc_power_visa_icon {
+      height: 35px;
+    }
+  }
 }
 
 .middle_footer {
@@ -284,58 +284,58 @@ ul {
   background-size: cover;
   color: #8f8f8f;
   padding: 2.5rem 0;
-}
 
-.links {
-  display: flex;
-  gap: 30px;
-}
+  h2 {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    text-transform: uppercase;
+  }
 
-.middle_footer h2 {
-  font-family: "Oswald", sans-serif;
-  color: white;
-  text-transform: uppercase;
-}
+  ul {
+    margin: 10px 0;
+  }
 
-.middle_footer ul {
-  margin: 10px 0;
-}
+  li {
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+  }
 
-.middle_footer li {
-  font-size: 0.9rem;
-  margin-bottom: 3px;
+  .links {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .bottom_footer {
   padding: 1.8rem 0;
   background-color: #303030;
-}
 
-.bottom_footer_content {
-  display: flex;
-  justify-content: space-between;
-}
+  .bottom_footer_content {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.bottom_footer button {
-  padding: 0.7rem;
-  color: white;
-  border: 2px solid #0082f9;
-}
+  button {
+    padding: 0.7rem;
+    color: white;
+    border: 2px solid #0082f9;
+  }
 
-.bottom_footer .social_follow_us {
-  font-family: "Oswald", sans-serif;
-  font-size: 1.3rem;
-  color: #0082f9;
-  font-weight: bold;
-}
+  .social_follow_us {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.3rem;
+    color: #0082f9;
+    font-weight: bold;
+  }
 
-.socials {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 
-.social_links a {
-  margin-left: 1rem;
+  .social_links a {
+    margin-left: 1rem;
+  }
 }
 </style>
