@@ -162,7 +162,11 @@ export default {
     <div class="bottom_footer">
       <div class="container">
         <div class="bottom_footer_content">
-          <button>SIGN-UP NOW!</button>
+          <a
+            class="signup_btn"
+            href="#"
+            >SIGN-UP NOW!</a
+          >
           <div class="socials">
             <span class="social_follow_us">FOLLOW US</span>
             <span class="social_links">
@@ -242,7 +246,8 @@ export default {
     justify-content: space-between;
   }
 
-  button {
+  .signup_btn {
+    font-size: 0.9rem;
     padding: 0.7rem;
     color: white;
     border: 2px solid #0082f9;
