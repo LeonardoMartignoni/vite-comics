@@ -62,9 +62,4 @@ main {
   flex-wrap: wrap;
   gap: 10px;
 }
-
-.card {
-  flex: 0 0 auto;
-  width: calc(16.66666667% - 10px);
-}
 </style>

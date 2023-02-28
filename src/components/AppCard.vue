@@ -8,14 +8,12 @@ export default {
 </script>
 
 <template>
-  <div>
-    <div class="card">
-      <img
-        :src="image"
-        alt=""
-      />
-      <span class="smallCardText">{{ text }}</span>
-    </div>
+  <div class="card">
+    <img
+      :src="image"
+      alt=""
+    />
+    <span class="smallCardText">{{ text }}</span>
   </div>
 </template>
 
@@ -23,6 +21,12 @@ export default {
 img {
   width: 200px;
   height: 200px;
+  object-position: top;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: calc(16.66666667% - 10px);
 }
 .smallCardText {
   display: block;
