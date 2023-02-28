@@ -32,6 +32,6 @@ img {
   display: block;
   text-transform: uppercase;
   font-size: 0.9rem;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 </style>

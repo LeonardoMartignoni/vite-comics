@@ -52,6 +52,7 @@ a {
 button {
   background: none;
   border: 0;
+  color: inherit;
 }
 
 ul {

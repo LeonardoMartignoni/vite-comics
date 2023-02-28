@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-  <main>
+  <div class="main_content">
     <div class="container">
       <span class="series">Current Series</span>
     </div>
@@ -35,11 +35,15 @@ export default {
         </div>
       </div>
     </div>
-  </main>
+
+    <div class="load_more_btn">
+      <button>Load More</button>
+    </div>
+  </div>
 </template>
 
-<style scoped>
-main {
+<style lang="scss" scoped>
+.main_content {
   color: white;
   background-color: #1c1c1c;
 }
@@ -55,11 +59,30 @@ main {
   top: -20px;
 }
 
+.cards {
+  padding: 20px 0;
+}
+
 .cards_content {
   padding: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 40px 10px;
+  justify-content: space-between;
+}
+
+.load_more_btn {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  button {
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: #0082f9;
+    padding: 12px 72px;
+  }
 }
 </style>
