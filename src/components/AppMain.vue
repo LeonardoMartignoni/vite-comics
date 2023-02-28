@@ -1,4 +1,22 @@
-<script></script>
+<script>
+import AppCard from "./AppCard.vue";
+import comicsList from "../assets/comics.js";
+
+export default {
+  components: { AppCard },
+
+  data() {
+    return {
+      comics: comicsList,
+    };
+  },
+
+  props: {
+    image: Image,
+    text: String,
+  },
+};
+</script>
 
 <template>
   <main>
@@ -9,13 +27,11 @@
     <div class="cards">
       <div class="container">
         <div class="cards_content">
-          <div class="card">
-            <img
-              src="https://picsum.photos/200/200"
-              alt=""
-            />
-            <span class="smallCardText">Action Comics</span>
-          </div>
+          <AppCard
+            v-for="comic in comics"
+            :text="comic.series"
+            :image="comic.thumb"
+          />
         </div>
       </div>
     </div>
@@ -40,6 +56,7 @@ main {
 }
 
 .cards_content {
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -49,12 +66,5 @@ main {
 .card {
   flex: 0 0 auto;
   width: calc(16.66666667% - 10px);
-}
-
-.smallCardText {
-  display: block;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  margin-top: 5px;
 }
 </style>
